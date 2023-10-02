@@ -1,2 +1,2 @@
 # CTF
-Bismillah Juara Gemastik 2024
+Challs and Solutions i wrote on past CTF competitions
