@@ -4,7 +4,9 @@ import os
 import string
 import random
 import time
-from secrets import FLAG
+#from secrets import FLAG
+
+FLAG = "IFEST23{muter_sekali_uang_di_aes_ama_2_plaintext_bisa_ngeleak_keynya_ternyata}"
 
 def generate_random_string(length):
     characters = string.ascii_letters + string.digits + string.punctuation
